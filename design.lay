@@ -1,0 +1,103 @@
+LAYOUT(MainWindow, 884, 536)
+	ITEM(Upp::ImageCtrl, imgMainWindow, LeftPosZ(0, 888).TopPosZ(-4, 544))
+	ITEM(Upp::Button, btnLogin, SetLabel(t_("Log In / Create User")).SetFont(Upp::SerifZ(26).Bold().Italic()).LeftPosZ(308, 268).TopPosZ(408, 52))
+END_LAYOUT
+
+LAYOUT(NavBar, 1212, 44)
+	ITEM(Upp::Label, dv___0, SetLabel(t_("Dalal")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SansSerifZ(20).Bold()).LeftPosZ(20, 96).VSizePosZ(12, 12))
+	ITEM(Upp::Button, loginBtn, SetLabel(t_("Log In")).SetFont(Upp::SansSerifZ(12)).Tip(t_("\001[g ")).HSizePosZ(1072, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, logoutBtn, SetLabel(t_("Log Out")).SetFont(Upp::SansSerifZ(12)).HSizePosZ(1072, 32).TopPosZ(8, 28))
+	ITEM(Upp::Button, profileBtn, SetLabel(t_("Profile")).SetFont(Upp::SansSerifZ(12)).HSizePosZ(960, 144).TopPosZ(8, 28))
+	ITEM(Upp::Button, clientRegister, SetLabel(t_("Client Register")).SetFont(Upp::SansSerifZ(12)).HSizePosZ(960, 144).TopPosZ(8, 28))
+	ITEM(Upp::Button, vendorRegister, SetLabel(t_("Vendor Register")).SetFont(Upp::SansSerifZ(12)).HSizePosZ(848, 256).TopPosZ(8, 28))
+END_LAYOUT
+
+LAYOUT(LogInForm, 896, 516)
+	ITEM(Upp::EditField, txtUserName, LeftPosZ(296, 424).TopPosZ(144, 48))
+	ITEM(Upp::EditField, txtPassword, LeftPosZ(296, 424).TopPosZ(220, 48))
+	ITEM(Upp::Label, dv___2, SetLabel(t_("User Name")).SetFont(Upp::StdFontZ(21).Bold()).LeftPosZ(148, 128).TopPosZ(144, 47))
+	ITEM(Upp::Label, dv___3, SetLabel(t_("PassWord")).SetFont(Upp::StdFontZ(21).Bold()).LeftPosZ(152, 124).TopPosZ(220, 43))
+	ITEM(Upp::Button, btnLogin, SetLabel(t_("Submit")).SetFont(Upp::StdFontZ(20).Bold()).LeftPosZ(400, 104).TopPosZ(364, 51))
+	ITEM(Upp::Button, btnRegisterClient, SetLabel(t_("Register Client")).LeftPosZ(8, 192).TopPosZ(484, 27))
+	ITEM(Upp::Button, btnRegisterVendor, SetLabel(t_("Register Vendor")).LeftPosZ(204, 192).TopPosZ(484, 27))
+END_LAYOUT
+
+LAYOUT(ClientRegistration, 1044, 520)
+	ITEM(Upp::EditField, txtUserName, LeftPosZ(396, 216).TopPosZ(184, 36))
+	ITEM(Upp::EditField, txtName, LeftPosZ(396, 216).TopPosZ(244, 36))
+	ITEM(Upp::EditField, txtPassword, LeftPosZ(396, 216).TopPosZ(316, 36))
+	ITEM(Upp::Label, UserName, SetLabel(t_("UserName")).SetFont(Upp::StdFontZ(19).Bold()).LeftPosZ(240, 112).TopPosZ(188, 36))
+	ITEM(Upp::Label, dv___4, SetLabel(t_("Dear Client, Provide Your Information")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(32).Bold().Italic()).LeftPosZ(124, 708).TopPosZ(60, 36))
+	ITEM(Upp::Label, Name, SetLabel(t_("Name")).SetFont(Upp::StdFontZ(19).Bold()).LeftPosZ(240, 112).TopPosZ(248, 36))
+	ITEM(Upp::Label, Password, SetLabel(t_("Password")).SetFont(Upp::StdFontZ(19).Bold()).LeftPosZ(240, 112).TopPosZ(316, 36))
+	ITEM(Upp::Button, btnSubmit, SetLabel(t_("Submit")).SetFont(Upp::StdFontZ(19).Bold()).LeftPosZ(432, 132).TopPosZ(400, 40))
+END_LAYOUT
+
+LAYOUT(VendorRegistration, 1056, 588)
+	ITEM(Upp::EditField, txtUsername, LeftPosZ(408, 240).TopPosZ(204, 40))
+	ITEM(Upp::EditField, txtName, LeftPosZ(408, 236).TopPosZ(268, 40))
+	ITEM(Upp::EditField, txtPassword, LeftPosZ(408, 236).TopPosZ(328, 40))
+	ITEM(Upp::Label, Username, SetLabel(t_("Username")).SetFont(Upp::StdFontZ(18).Bold()).LeftPosZ(228, 128).TopPosZ(192, 51))
+	ITEM(Upp::Label, dv___4, SetLabel(t_("Dear Seller, Provide Your Information")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(31).Bold().Italic()).LeftPosZ(92, 752).TopPosZ(80, 51))
+	ITEM(Upp::Label, Name, SetLabel(t_("Name")).SetFont(Upp::StdFontZ(18).Bold()).LeftPosZ(228, 128).TopPosZ(260, 51))
+	ITEM(Upp::Label, Password, SetLabel(t_("Password")).SetFont(Upp::StdFontZ(18).Bold()).LeftPosZ(228, 128).TopPosZ(324, 51))
+	ITEM(Upp::Button, btnSubmit, SetLabel(t_("Submit")).SetFont(Upp::StdFontZ(19).Bold()).LeftPosZ(400, 148).TopPosZ(460, 40))
+END_LAYOUT
+
+LAYOUT(Shop, 1188, 532)
+	ITEM(Upp::Label, dv___0, SetLabel(t_("DALAL")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(26).Bold().Italic()).SetInk(Upp::Color(204, 204, 204)).LeftPosZ(428, 384).TopPosZ(12, 39))
+	ITEM(Upp::DropList, cmbCategory, HSizePosZ(24, 736).TopPosZ(60, 27))
+	ITEM(Upp::Button, btnAddToCart, SetLabel(t_("Add To Cart")).SetFont(Upp::StdFontZ(15)).LeftPosZ(744, 148).TopPosZ(480, 32))
+	ITEM(Upp::Button, btnPlaceOrder, SetLabel(t_("Place Order")).SetFont(Upp::StdFontZ(15)).LeftPosZ(908, 148).TopPosZ(440, 32))
+	ITEM(Upp::EditIntSpin, spinQty, Min(1).LeftPosZ(528, 116).TopPosZ(476, 36))
+	ITEM(Upp::Label, quantityLabel, SetLabel(t_("Quantity")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::StdFontZ(18)).LeftPosZ(528, 80).TopPosZ(428, 31))
+	ITEM(Upp::Button, btnReviews, SetLabel(t_("Check Reviews")).SetFont(Upp::StdFontZ(18)).LeftPosZ(744, 148).TopPosZ(440, 32))
+	ITEM(Upp::ColumnList, lstProducts, LeftPosZ(24, 164).TopPosZ(96, 316))
+	ITEM(Upp::ArrayCtrl, gridCart, LeftPosZ(940, 200).TopPosZ(100, 312))
+	ITEM(Upp::ImageCtrl, imgProduct, LeftPosZ(224, 336).TopPosZ(100, 308))
+	ITEM(Upp::Label, lblTitle, SetLabel(t_("\n")).SetFont(Upp::StdFontZ(18).Bold()).LeftPosZ(572, 388).TopPosZ(100, 48))
+	ITEM(Upp::Label, lblDescription, LeftPosZ(572, 324).TopPosZ(152, 168))
+	ITEM(Upp::Label, lblPrice, LeftPosZ(960, 232).TopPosZ(480, 44))
+END_LAYOUT
+
+LAYOUT(Sell, 1040, 504)
+	ITEM(Upp::Label, dv___0, SetLabel(t_("DALAL")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(26).Bold().Italic()).SetInk(Upp::LtGray).LeftPosZ(300, 384).TopPosZ(40, 39))
+	ITEM(Upp::ArrayCtrl, gridProducts, LeftPosZ(24, 1008).TopPosZ(192, 252))
+	ITEM(Upp::Button, btnAdd, SetLabel(t_("Add To Sell")).SetFont(Upp::StdFontZ(15)).LeftPosZ(852, 180).TopPosZ(452, 40))
+	ITEM(Upp::DropList, cmbCategory, HSizePosZ(24, 636).TopPosZ(144, 32))
+END_LAYOUT
+
+LAYOUT(AddnewProduct, 716, 516)
+	ITEM(Upp::Label, addlabel, SetLabel(t_("Add New Product")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::StdFontZ(21).Bold().Italic()).LeftPosZ(220, 248).VSizePosZ(56, 420))
+	ITEM(Upp::Label, dv___1, SetLabel(t_("DALAL")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(25).Bold().Italic()).LeftPosZ(276, 136).TopPosZ(16, 36))
+	ITEM(Upp::EditField, txtName, LeftPosZ(164, 492).TopPosZ(132, 36))
+	ITEM(Upp::EditField, txtImage, LeftPosZ(164, 412).TopPosZ(332, 36))
+	ITEM(Upp::EditField, txtDescription, LeftPosZ(164, 496).TopPosZ(176, 144))
+	ITEM(Upp::Label, dv___5, SetLabel(t_("Name")).SetFont(Upp::StdFontZ(22).Bold().Italic()).LeftPosZ(44, 76).TopPosZ(136, 24))
+	ITEM(Upp::EditFloat, txtPrice, LeftPosZ(164, 220).TopPosZ(388, 36))
+	ITEM(Upp::Label, lblPrice, SetLabel(t_("Price")).SetFont(Upp::StdFontZ(22).Bold().Italic()).LeftPosZ(44, 92).TopPosZ(396, 24))
+	ITEM(Upp::EditField, txtCategory, LeftPosZ(164, 224).TopPosZ(440, 44))
+	ITEM(Upp::Label, lblCategory, SetLabel(t_("Category")).SetFont(Upp::StdFontZ(22).Bold().Italic()).LeftPosZ(44, 108).TopPosZ(444, 36))
+	ITEM(Upp::Label, dv___10, SetLabel(t_("Description")).SetFont(Upp::StdFontZ(22).Bold().Italic()).LeftPosZ(20, 132).TopPosZ(184, 20))
+	ITEM(Upp::Label, dv___11, SetLabel(t_("Image")).SetFont(Upp::StdFontZ(22).Bold().Italic()).LeftPosZ(44, 108).TopPosZ(336, 28))
+	ITEM(Upp::Button, btnAdd, SetLabel(t_("Add Product")).LeftPosZ(452, 192).TopPosZ(416, 44))
+	ITEM(Upp::Button, btnImage, SetLabel(t_("...")).LeftPosZ(580, 60).TopPosZ(332, 32))
+END_LAYOUT
+
+LAYOUT(Review, 780, 408)
+	ITEM(Upp::EditField, txtMessage, LeftPosZ(128, 524).TopPosZ(184, 132))
+	ITEM(Upp::Label, addReview, SetLabel(t_("Write Your Review")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(30).Bold().Italic()).LeftPosZ(264, 264).TopPosZ(80, 48))
+	ITEM(Upp::Button, btnAdd, SetLabel(t_("Add")).SetFont(Upp::SerifZ(27).Bold().Italic()).LeftPosZ(336, 100).TopPosZ(324, 44))
+	ITEM(Upp::Label, dv___3, SetLabel(t_("DALAL")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(23).Bold().Italic()).LeftPosZ(304, 184).TopPosZ(12, 48))
+	ITEM(Upp::EditIntSpin, spinRating, Min(0).Max(5).LeftPosZ(472, 176).TopPosZ(136, 36))
+END_LAYOUT
+
+LAYOUT(Cart, 1188, 664)
+	ITEM(Upp::Label, dv___0, SetLabel(t_("Your Cart")).SetAlign(Upp::ALIGN_CENTER).SetFont(Upp::SerifZ(30).Bold().Italic()).LeftPosZ(296, 472).TopPosZ(52, 72))
+	ITEM(Upp::ArrayCtrl, dv___1, LeftPosZ(44, 588).TopPosZ(248, 324))
+	ITEM(Upp::Label, dv___2, SetLabel(t_("Added products : ")).SetFont(Upp::SerifZ(18).Italic()).LeftPosZ(44, 184).TopPosZ(180, 56))
+	ITEM(Upp::Label, dv___3, SetLabel(t_("Choose Options: ")).SetFont(Upp::StdFontZ(15).Bold()).LeftPosZ(724, 152).TopPosZ(372, 48))
+	ITEM(Upp::Button, CODBtn, SetLabel(t_("COD")).SetFont(Upp::StdFontZ(18).Bold()).LeftPosZ(720, 92).TopPosZ(436, 40))
+	ITEM(Upp::Button, EMIBtn, SetLabel(t_("EMI")).SetFont(Upp::StdFontZ(17).Bold()).LeftPosZ(828, 92).TopPosZ(436, 40))
+END_LAYOUT
+

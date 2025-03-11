@@ -1,0 +1,37 @@
+uses
+	CtrlLib,
+	plugin/jpg,
+	plugin/sqlite3;
+
+file
+	Dalal.h,
+	design.lay,
+	AuthHandler.cpp,
+	AuthHandler.h,
+	Category.cpp,
+	Category.h,
+	Customer.cpp,
+	Customer.h,
+	Dalal.h,
+	EMIOrder.cpp,
+	EMIOrder.h,
+	main.cpp,
+	OneTimeOrder.cpp,
+	OneTimeOrder.h,
+	Order.cpp,
+	Order.h,
+	Product.cpp,
+	Product.h,
+	Review.cpp,
+	Review.h,
+	User.cpp,
+	User.h,
+	CategoryManagerSingleton.h,
+	Vendor.cpp,
+	CategoryManagerSingleton.cpp,
+	Vendor.h,
+	main.cpp;
+
+mainconfig
+	"" = "GUI";
+
